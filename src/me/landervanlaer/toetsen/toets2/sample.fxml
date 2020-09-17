@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="me.landervanlaer.toetsen.toets2.Controller"
+            prefHeight="200.0" prefWidth="450.0">
+    <Label layoutX="50" layoutY="30" style="-fx-font-size: 15px">Voornaam</Label>
+    <Label layoutX="50" layoutY="80" style="-fx-font-size: 15px">Achternaam</Label>
+
+    <TextField fx:id="voornaam" layoutX="200" layoutY="30" onAction="#click"/>
+    <TextField fx:id="achternaam" layoutX="200" layoutY="80" onAction="#click"/>
+
+    <Label fx:id="voornaamError" layoutX="200" layoutY="60" style="-fx-font-size: 11px; -fx-text-fill: RED"/>
+    <Label fx:id="achternaamError" layoutX="200" layoutY="110" style="-fx-font-size: 11px; -fx-text-fill: RED"/>
+
+    <Button onAction="#click" layoutX="50" layoutY="140">Maak gebruikersnummer</Button>
+
+    <Label fx:id="gebruikersNummer" layoutX="210" layoutY="140" style="-fx-font-size: 12px;"/>
+</AnchorPane>
