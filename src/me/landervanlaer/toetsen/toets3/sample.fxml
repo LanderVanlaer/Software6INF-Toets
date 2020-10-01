@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="me.landervanlaer.toetsen.toets3.Controller"
+            prefHeight="400.0" prefWidth="600.0">
+    <ListView fx:id="list" layoutX="5" layoutY="50" prefHeight="250">
+        <String fx:value="Lied"/>
+        <String fx:value="Leven"/>
+        <String fx:value="Antennes"/>
+        <String fx:value="Spinazie"/>
+        <String fx:value="Amandelen"/>
+        <String fx:value="Baby"/>
+    </ListView>
+    <ChoiceBox fx:id="choiceBox" value="Omgekeerde volgorde" layoutX="10" layoutY="15">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Normale volgorde"/>
+                <String fx:value="Omgekeerde volgorde"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Label fx:id="label" layoutX="320" layoutY="150" style="-fx-font-size: 40px"/>
+</AnchorPane>
